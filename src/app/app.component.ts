@@ -15,6 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
+  title = 'angular19-lodash-css-tailwind-test-project';
+
   faCircleUser = faCircleUser;
   faHouse = faHouse;
 
