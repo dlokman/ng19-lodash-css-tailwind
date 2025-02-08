@@ -28,7 +28,27 @@
     }
 } */
 
+/* https://github.com/tailwindlabs/tailwindcss/pull/14993 */
+/* --spacing: 4px;   mt-1=== 0.25rem == 1/4*16 = 4px*/
+/*
+  1rem = 16px
+  mt-0 -> 0rem
+  mt-1 -> 0.25rem
+  mt-2 -> 0.5rem
+  mt-3 -> 0.75rem
+  mt-4 -> 1rem
+  mt-5 -> 1.25rem
+  mt-6 -> 1.5rem
+  mt-7 -> 1.75rem
+  mt-8 -> 2rem
+*/
 
+@utility container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .custombutton {
   @apply bg-sky-500 hover:bg-sky-700 px-4 py-2 text-sm leading-5 rounded-full font-semibold text-white;
 }
